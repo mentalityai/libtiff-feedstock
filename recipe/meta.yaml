@@ -13,7 +13,7 @@ source:
     - def_snprintf.patch  # [win]
 
 build:
-  number: 7
+  number: 8
   features:
     - vc9  # [win and py27]
     - vc10  # [win and py34]
@@ -25,14 +25,14 @@ requirements:
     - cmake  # [win]
     - toolchain
     - zlib 1.2.*
-    - jpeg 9*
+    - libjpeg-turbo *
     - xz 5.2.*  # [not win]
     - vc 9  # [win and py27]
     - vc 10  # [win and py34]
     - vc 14  # [win and py35]
   run:
     - zlib 1.2.*
-    - jpeg 9*
+    - libjpeg-turbo *
     - xz 5.2.*  # [not win]
     - vc 9  # [win and py27]
     - vc 10  # [win and py34]
